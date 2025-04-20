@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#007bff">
+  <title>Weather Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Weather Hub Dashboard</h1>
+
+    <!-- Search bar for entering city -->
+    <div class="search-bar">
+      <input type="text" id="cityInput" placeholder="Enter City Name" />
+      <button id="fetchWeatherBtn">Get Weather</button>
+    </div>
+
+    <!-- Weather Data Output -->
+    <div id="weather-output">
+      <!-- Weather info will be displayed here -->
+    </div>
+
+    <!-- Weather Chart -->
+    <div class="weather-chart">
+      <canvas id="weatherChart"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
